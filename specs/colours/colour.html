@@ -1,0 +1,4 @@
+<% (typeof color === "undefined" ? color = '#333' : color = color) %>
+<% (typeof name === "undefined" ? name = 'No name' : name = name) %>
+<h3><%= name %>: <%= color %></h3>
+<div class="swatch" style="background-color:<%= color %>;"></div>

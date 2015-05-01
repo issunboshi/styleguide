@@ -1,0 +1,8 @@
+<% (typeof el_type === "undefined" ? el_type = 'button' : el_type = el_type.toLowerCase()) %>
+<% (typeof modifier === "undefined" ? modifier = '' : modifier = modifier.toLowerCase()) %>
+<% (typeof button_text === "undefined" ? button_text = 'Find out more' : button_text = button_text) %>
+<% if(el_type === 'button'){ %>
+	<button class="button<% if(modifier.length > 0) { %> button--<%= modifier %><% } %>"><%= button_text %> </button>
+<% } else { %>
+	<a href="#777" class="button<% if(modifier.length > 0) { %> button--<%= modifier %><% } %>"><%= button_text %> </a>
+<% } %>

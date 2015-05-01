@@ -1,0 +1,18 @@
+*.idea
+*.iml
+*.DS_Store
+node_modules
+
+# Generated data for API
+/core/api/data
+/log
+
+# Generated JSdoc
+/jsdoc
+
+# Build folder for assets
+/build
+
+# Web server root, and your specs home
+# You can store other repository in this path
+/user
