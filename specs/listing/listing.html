@@ -1,0 +1,45 @@
+<% (typeof items === "undefined" ? items = [{title: "Lorem ipsum dolor.", link: "http://www.bbc.co.uk", description: "http://www.bbc.co.uk", linkText: "View ipsum."}] : items = items) %>
+<% (typeof type === "undefined" ? type = "standard" : type = type) %>
+
+<% if(type === 'grid'){ %>
+
+<ol class="content_listing content_listing--grid">
+	<% items.forEach(function(item) { %>
+	<li class="content_listing__item">
+		<a href="<%= item.link%>">
+			<article class="content_listing__wrapper">
+				<div class="content_listing__body">
+					<h2 class="content_listing__title"><%= item.title%></h2>
+					<p class="content_listing__content"><%= item.description%></p>
+				</div>
+				<ul class="content_listing__actions">
+					<li class="content_listing__action_item"> 
+						<%= item.linkText%>
+					</li>
+				</ul>
+			</article>
+		</a>
+	</li>
+	<% }); %>
+</ol>
+<% } else { %>
+<ol class="content_listing">
+	<% items.forEach(function(item) { %>
+	<li class="content_listing__item">
+		<a href="<%= item.link%>">
+			<article class="content_listing__wrapper">
+				<div class="content_listing__body">
+					<h2 class="content_listing__title"><%= item.title%></h2>
+					<p class="content_listing__content"><%= item.description%></p>
+				</div>
+				<ul class="content_listing__actions">
+					<li class="content_listing__action_item"> 
+						<%= item.linkText%>
+					</li>
+				</ul>
+			</article>
+		</a>
+	</li>
+	<% }); %>
+</ol>
+<% } %>

@@ -1,0 +1,23 @@
+﻿<h1>Listing</h1>
+
+<div class="source_info">
+    <p>Listing styles used throughout the site</p>
+</div>
+
+<section class="source_section">
+    <h2>Plain listing</h2>
+	<p>Used to list jobs</p>
+
+    <div class="source_example">
+        <%- include('listing.html', {items: [{title: "Lorem ipsum dolor. (5)", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, temporibus!", linkText: "View ipsum."}, {title: "Lorem dolor. (2)", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.", linkText: "View lorem."}, {title: "Lorem ipsum 3. (9)", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur.", linkText: "View dolor."}]}) %>
+    </div>
+</section>
+
+<section class="source_section">
+    <h2>Grid listing</h2>
+	<p>Used to link to multiple sections of the site</p>
+
+    <div class="source_example">
+        <%- include('listing.html', {type: "grid", items: [{title: "Lorem ipsum", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, temporibus!", linkText: "View ipsum."}, {title: "Lorem dolor", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.", linkText: "View lorem."}, {title: "Lorem ipsum", link: "http://www.bbc.co.uk", description: "Lorem ipsum dolor sit amet, consectetur.", linkText: "View dolor."}]}) %>
+    </div>
+</section>
