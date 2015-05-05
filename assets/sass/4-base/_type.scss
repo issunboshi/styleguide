@@ -20,6 +20,14 @@ em, i, cite {
 	@extend %italic;
 }
 
+figcaption {
+	color: $lightest-grey;
+}
+
+cite {
+	color: $lightest-grey;
+}
+
 small {
 	@extend %mega-small;
 }

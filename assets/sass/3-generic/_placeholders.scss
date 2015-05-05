@@ -15,6 +15,14 @@
 	@include decoration-none;
 }
 
+@mixin reset-margin {
+	margin: 0;
+}
+
+%reset-margin {
+	@include reset-margin;
+}
+
 @mixin reset-margin-bottom {
 	margin-bottom: 0;
 }
@@ -105,7 +113,7 @@
 }
 
 @mixin heading-4-size {
-	font-size: rem(22px);
+	font-size: rem(16px);
 }
 
 %heading-4-size {
@@ -113,7 +121,7 @@
 }
 
 @mixin heading-5-size {
-	font-size: rem(18px);
+	font-size: rem(16px);
 }
 
 %heading-5-size {

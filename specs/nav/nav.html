@@ -1,0 +1,8 @@
+<% (typeof links === "undefined" ? links = [{link: "http://www.bbc.co.uk", text: "Lorem ipsum dolor."}, {link: "http://www.bbc.co.uk", text: "Lorem  dolor."}] : links = links) %>
+<nav role="navigation" class="nav">
+	<ul class="nav__list">
+		<% links.forEach(function(link) { %>
+		<li class="nav__item"><a href="<%= link.url %>" class="nav__link<% if(link.active !== undefined && link.active === true){ %> nav__link--active<%}%>"><%= link.text %></a></li>
+		<% }); %>
+	</ul>
+</nav>

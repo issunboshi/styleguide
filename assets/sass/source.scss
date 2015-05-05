@@ -5,6 +5,10 @@
 @import "4-base/other";
 @import "4-base/type";
 
+h4, h5, h6 {
+	@extend %text-transform-none;
+}
+
 .source_container {
 	max-width: $content-width;
 	@extend %margin-left-right-auto;
@@ -64,7 +68,7 @@
 }
 
 .source_header_nav_lst {
-
+	margin-left: 0;
 }
 
 .source_header_nav_i {

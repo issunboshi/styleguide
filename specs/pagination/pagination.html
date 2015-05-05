@@ -1,0 +1,8 @@
+<% (typeof links === "undefined" ? links = [{link: "http://www.bbc.co.uk", text: "1"}, {link: "http://www.bbc.co.uk", text: "2"}] : links = links) %>
+<nav role="navigation" class="nav pagination">
+	<ul class="nav__list pagination__list">
+		<% links.forEach(function(link) { %>
+		<li class="nav__item pagination__item"><a href="<%= link.url %>" class="nav__link pagination__link <% if(link.active !== undefined && link.active === true){ %> nav__link--active pagination__link--active<%}%>"><%= link.text %></a></li>
+		<% }); %>
+	</ul>
+</nav>
